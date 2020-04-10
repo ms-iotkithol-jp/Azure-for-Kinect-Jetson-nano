@@ -68,11 +68,6 @@ and restart Viewer.
 GOOD LUCK
 
 
+# Next Step - Run Azure Kinect DK apps on docker! 
 
-
-
-
-
-
-
-
+Please see [run-on-docker/README.md](./run-on-docker/README.md)
