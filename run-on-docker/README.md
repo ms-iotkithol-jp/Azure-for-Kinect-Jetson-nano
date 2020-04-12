@@ -4,6 +4,11 @@ This activity is intended to make this device available in IoT scenario.
 
 Please setup your Jetson Nano and Azure Kinect DK according to [../README.md](../README.md). And make sure that the K4aviewer runs propery on host environment. 
 
+0. Update Jetson Nano Ubuntu before SDK setting  
+I recommend that you'd better update your Ubuntu of Jetson Nano.  
+- $ sudo apt-get update
+- $ sudo apt-get dist-upgrade
+
 1. Make directory named 'iot' in the directory where the 'Azure-Kinect-Sensor-SDK' 
 
 - $ mkdir iot
@@ -47,6 +52,11 @@ After do that, output.mkv file is created.
 - $ cd ../Azure-Kinect-Sensor-SDK/build/bin
 - $ ./k4aviewer 
 
+6. Try you own dream apps!  
+As I shown above, you can run Azure Kinect apps by only copying executable file with necessary libraries. Please try to run your apps developed by yourself. 
+
+## Next Step
+Will try to run Azure Kinect apps on [Azure IoT Edge technology](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge).
 
 ## Issue
 Sound capture by mic array is unstable. In this container I checked that 'arecord -d 5 test.wav' work properly several times. 
